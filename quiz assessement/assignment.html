@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Assignment Upload</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header>
+    <h1>Upload Assignment</h1>
+  </header>
+  <main>
+    <form action="/upload_assignment" method="POST" enctype="multipart/form-data">
+      <label for="title">Assignment Title:</label>
+      <input type="text" id="title" name="title" required>
+      <label for="file">Upload File:</label>
+      <input type="file" id="file" name="file" accept=".pdf, .docx" required>
+      <button type="submit">Upload</button>
+    </form>
+  </main>
+  <footer>
+    <p>© 2025 Quiz & Assignment Generator</p>
+  </footer>
+</body>
+</html>
